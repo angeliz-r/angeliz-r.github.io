@@ -1418,6 +1418,15 @@ input::-moz-focus-inner {
   margin-bottom: 4.8rem;
 }
 
+.display-1-portfolio {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #ffcc32;
+  background-color: #101010;
+  font-size: 4.6rem;
+  text-align: center;
+}
+
 .display-1--light {
   color: #FFFFFF;
 }
