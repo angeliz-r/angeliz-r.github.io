@@ -1418,6 +1418,18 @@ input::-moz-focus-inner {
   margin-bottom: 4.8rem;
 }
 
+.display-socials {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 4.6rem;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 4.8rem;
+  margin-left: 1rem;
+  display: inline;
+  inline-size: 50%;
+}
+
 .display-1-portfolio {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -1601,6 +1613,109 @@ input::-moz-focus-inner {
 .btn-animated-yellow:hover::after {
   right: 3rem;
 }
+
+/*/////custom back to top btn//////*/
+.btn-animated-up {
+  position: absolute;
+  background: transparent !important;
+  border-color: #ffcc32 !important;
+  color: #FFFFFF !important;
+  /*height: 6.6rem;*/
+  line-height: 6.2rem;
+  /*padding: 0 8rem 0 4rem;*/
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-animated-up::before {
+  content: "";
+  height: 100%;
+  width: 0;
+  background-color: #ffcc32;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn-animated-up::after {
+  display: block;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-image: url(../images/icons/icon-arrow-up.svg);*/
+  background-size: contain;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  /*margin-top: -1.1rem;*/
+  position: absolute;
+  top: 100%;
+  bottom: 4rem;
+}
+
+.btn-animated-up:hover::before {
+  width: 100%;
+}
+
+.btn-animated-up:hover::after {
+  top: 3rem;
+}
+
+
+.btn-animatedbg-up {
+  position: absolute;
+  background: transparent !important;
+  border-color: #ffcc32 !important;
+  color: #FFFFFF !important;
+  /*width: 6.6rem;*/
+  line-height: 6.2rem;
+  /*padding: 0 8rem 0 4rem;*/
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-animatedbg-up::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  background-color: #ffcc32;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn-animatedbg-up::after {
+  display: block;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-image: url(../images/icons/icon-arrow-up.svg);*/
+  background-size: contain;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  /*margin-top: -1.1rem;*/
+  position: absolute;
+  top: 100%;
+  bottom: 4rem;
+}
+
+.btn-animatedbg-up:hover::before {
+  height: 100%;
+}
+
+.btn-animatedbg-up:hover::after {
+  top: 3rem;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
