@@ -742,7 +742,8 @@ form,
  * # forms
  *
  * ------------------------------------------------------------------- */
-fieldset {
+/*
+ fieldset {
   border: none;
 }
 
@@ -818,8 +819,9 @@ select {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-
+*/
 /* IE9 and below */
+/*
 .oldie .cl-custom-select::after {
   display: none;
 }
@@ -870,20 +872,21 @@ label > input[type="radio"] {
   position: relative;
   top: .15rem;
 }
-
+*/
 /* ------------------------------------------------------------------- 
  * ## Style Placeholder Text
  * ------------------------------------------------------------------- */
+ /*
 ::-webkit-input-placeholder {
   color: rgba(13, 13, 13, 0.65);
 }
 
 :-moz-placeholder {
-  color: rgba(13, 13, 13, 0.65);  /* Firefox 18- */
+  color: rgba(13, 13, 13, 0.65);
 }
 
 ::-moz-placeholder {
-  color: rgba(13, 13, 13, 0.65);  /* Firefox 19+ */
+  color: rgba(13, 13, 13, 0.65); 
 }
 
 :-ms-input-placeholder {
@@ -893,10 +896,12 @@ label > input[type="radio"] {
 .placeholder {
   color: rgba(13, 13, 13, 0.65) !important;
 }
+*/
 
 /* ------------------------------------------------------------------- 
  * ## Change Autocomplete styles in Chrome
  * ------------------------------------------------------------------- */
+ /*
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus
@@ -911,7 +916,7 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-
+*/
 
 /* ===================================================================
  * # buttons
@@ -1042,6 +1047,7 @@ input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## alert box
  * ------------------------------------------------------------------- */
+ /*
 .alert-box {
   padding: 2.1rem 4rem 2.1rem 3rem;
   position: relative;
@@ -1083,7 +1089,7 @@ input::-moz-focus-inner {
   background-color: #fff099;
   color: #bba31b;
 }
-
+*/
 /* ------------------------------------------------------------------- 
  * ## additional typo styles
  * ------------------------------------------------------------------- */
@@ -1132,6 +1138,7 @@ input::-moz-focus-inner {
 
 /* dictionary definition style 
  * ----------------------------------------------- */
+ /*
 .dictionary-style dt {
   display: inline;
   counter-reset: definitions;
@@ -1150,7 +1157,7 @@ input::-moz-focus-inner {
 .dictionary-style dd:before {
   content: counter(definitions, decimal) ". ";
 }
-
+*/
 /** 
  * Pull Quotes
  * -----------
@@ -1163,6 +1170,7 @@ input::-moz-focus-inner {
  *  </aside>
  *
  * --------------------------------------------------------------------- */
+ /*
 .pull-quote {
   position: relative;
   padding: 2.1rem 3rem 2.1rem 0px;
@@ -1196,7 +1204,7 @@ input::-moz-focus-inner {
 .pull-quote blockquote:before {
   content: none;
 }
-
+*/
 /** 
  * Stats Tab
  * ---------
@@ -1253,6 +1261,7 @@ input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## skillbars
  * ------------------------------------------------------------------- */
+ /*
 .skill-bars {
   list-style: none;
   margin: 6rem 0 3rem;
@@ -1390,9 +1399,7 @@ input::-moz-focus-inner {
 .skill-bars li .percent100 {
   width: 100%;
 }
-
-
-
+*/
 /* ===================================================================
  * # reusable and common theme styles
  *
@@ -2717,6 +2724,7 @@ html.no-csstransitions .home-content__main {
  * # about
  *
  * ------------------------------------------------------------------- */
+ /*
 .s-about {
   padding-top: 18rem;
   padding-bottom: 18rem;
@@ -2782,11 +2790,12 @@ html.no-csstransitions .home-content__main {
   background-image: url(../images/icons/icon-documentation.svg);
 }
 
-
+*/
 /* ------------------------------------------------------------------- 
  * responsive:
  * about
  * ------------------------------------------------------------------- */
+ /*
 @media only screen and (max-width:1200px) {
   .s-about {
     padding-top: 16.2rem;
@@ -2852,7 +2861,7 @@ html.no-csstransitions .home-content__main {
   }
 
 }
-
+*/
 
 
 /* ===================================================================
@@ -2945,8 +2954,6 @@ html.no-csstransitions .home-content__main {
   }
 
 }
-
-
 
 /* ===================================================================
  * # works
@@ -3183,6 +3190,7 @@ html.no-csstransitions .home-content__main {
  * # testimonials
  *
  * ------------------------------------------------------------------- */
+ /*
 .testimonials-wrap {
   margin-top: 7.8rem;
 }
@@ -3308,11 +3316,12 @@ html.no-csstransitions .home-content__main {
   font-size: 1.4rem;
   line-height: 2.7rem;
 }
-
+*/
 /* ------------------------------------------------------------------- 
  * responsive:
  * testimonials
  * ------------------------------------------------------------------- */
+ /*
 @media only screen and (max-width:1000px) {
   .testimonials__slide {
     text-align: center;
@@ -3383,13 +3392,13 @@ html.no-csstransitions .home-content__main {
   }
 
 }
-
-
+*/
 
 /* ===================================================================
  * # clients
  *
  * ------------------------------------------------------------------- */
+ /*
 .s-clients {
   padding-top: 18rem;
   padding-bottom: 18rem;
@@ -3445,11 +3454,12 @@ html.no-csstransitions .home-content__main {
   transform: scale(0.8);
   opacity: 1;
 }
-
+*/
 /* ------------------------------------------------------------------- 
  * responsive:
  * clients
  * ------------------------------------------------------------------- */
+ /*
 @media only screen and (max-width:1200px) {
   padding-top: 16.2rem;
   padding-bottom: 16.2rem;
@@ -3508,7 +3518,7 @@ html.no-csstransitions .home-content__main {
   }
 
 }
-
+*/
 
 
 /* ===================================================================
@@ -3608,8 +3618,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
-
 /* ===================================================================
  * # contact
  *
@@ -3700,6 +3708,7 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## subscribe
  * ------------------------------------------------------------------- */
+ /*
 .mc-form {
   margin-top: 2.1rem;
   width: 100%;
@@ -3723,17 +3732,17 @@ html.no-csstransitions .home-content__main {
 
 .mc-form input[type="email"]::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.2);
-}
-
+}*/
+/*
 .mc-form input[type="email"]:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.2);      /* Firefox 18- */
-}
+  color: rgba(255, 255, 255, 0.2); 
+/*}*/
 
-.mc-form input[type="email"]::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.2);      /* Firefox 19+ */
-}
+/*.mc-form input[type="email"]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);     
+/*}*/
 
-.mc-form input[type="email"]:-ms-input-placeholder {
+/*.mc-form input[type="email"]:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.2);
 }
 
@@ -3762,7 +3771,7 @@ html.no-csstransitions .home-content__main {
 
 .mc-form label i {
   padding-right: 6px;
-}
+}*/
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -3858,8 +3867,6 @@ html.no-csstransitions .home-content__main {
   }
 
 }
-
-
 
 /* ===================================================================
  * # footer
