@@ -3398,7 +3398,7 @@ html.no-csstransitions .home-content__main {
  * # clients
  *
  * ------------------------------------------------------------------- */
- /*
+ 
 .s-clients {
   padding-top: 18rem;
   padding-bottom: 18rem;
@@ -3454,12 +3454,12 @@ html.no-csstransitions .home-content__main {
   transform: scale(0.8);
   opacity: 1;
 }
-*/
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * clients
  * ------------------------------------------------------------------- */
- /*
+ 
 @media only screen and (max-width:1200px) {
   padding-top: 16.2rem;
   padding-bottom: 16.2rem;
@@ -3518,7 +3518,7 @@ html.no-csstransitions .home-content__main {
   }
 
 }
-*/
+
 
 
 /* ===================================================================
@@ -3708,7 +3708,7 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## subscribe
  * ------------------------------------------------------------------- */
- /*
+ 
 .mc-form {
   margin-top: 2.1rem;
   width: 100%;
@@ -3732,17 +3732,17 @@ html.no-csstransitions .home-content__main {
 
 .mc-form input[type="email"]::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.2);
-}*/
-/*
+}
+
 .mc-form input[type="email"]:-moz-placeholder {
   color: rgba(255, 255, 255, 0.2); 
-/*}*/
+}
 
-/*.mc-form input[type="email"]::-moz-placeholder {
+.mc-form input[type="email"]::-moz-placeholder {
   color: rgba(255, 255, 255, 0.2);     
-/*}*/
+}
 
-/*.mc-form input[type="email"]:-ms-input-placeholder {
+.mc-form input[type="email"]:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.2);
 }
 
@@ -3771,7 +3771,7 @@ html.no-csstransitions .home-content__main {
 
 .mc-form label i {
   padding-right: 6px;
-}*/
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:
