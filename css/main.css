@@ -75,6 +75,7 @@ body {
 body {
   background: #151515;
   font-family: "Merriweather", serif;
+  font-display: swap;
   font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
@@ -220,6 +221,7 @@ em, i, strong, b {
 em, i {
   font-family: "Merriweather", serif;
   font-style: italic;
+  font-display: swap;
 }
 
 strong, b {
@@ -263,6 +265,7 @@ blockquote cite {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
+  font-display: swap;
   line-height: 1.5;
 }
 
@@ -1244,6 +1247,7 @@ input::-moz-focus-inner {
   font-size: 1.4rem;
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2861,7 +2865,7 @@ html.no-csstransitions .home-content__main {
   background-color: #151515;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/bg/services-bg.jpg);
+  background-image: url(https://ik.imagekit.io/goyhdy3jojq/bg/services-bg_BkqMw6eYL.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415554581);
   background-size: cover;
   position: relative;
   color: rgba(255, 255, 255, 0.5);
@@ -3516,7 +3520,7 @@ html.no-csstransitions .home-content__main {
   padding-bottom: 5.4rem;
   color: rgba(255, 255, 255, 0.5);
   background-color: #000000;
-  background-image: url(../images/bg/stats-bg.jpg);
+  background-image: url(https://ik.imagekit.io/goyhdy3jojq/bg/stats-bg_zW_vfT7Qi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415546309);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
