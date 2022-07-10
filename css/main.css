@@ -184,7 +184,7 @@ p img {
 }
 
 p.lead {
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 2.4rem;
   line-height: 1.875;
@@ -219,13 +219,13 @@ em, i, strong, b {
 }
 
 em, i {
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-display: swap;
 }
 
 strong, b {
-  font-family: "Merriweather", serif;
+  font-family:"Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -253,7 +253,7 @@ blockquote:before {
 }
 
 blockquote p {
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
   font-size: 2.1rem;
   line-height: 1.857;
@@ -280,7 +280,7 @@ blockquote cite a:visited {
 }
 
 abbr {
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-variant: small-caps;
   text-transform: lowercase;
@@ -443,7 +443,7 @@ table {
   border-width: 0;
   width: 100%;
   max-width: 100%;
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 th,
@@ -1428,6 +1428,16 @@ input::-moz-focus-inner {
   margin-top: 0;
   margin-bottom: 4.8rem;
 }
+.display-2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.03rem;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  margin-left: 9.5rem;
+}
 
 .display-socials {
   font-family: "Montserrat", sans-serif;
@@ -1736,6 +1746,9 @@ input::-moz-focus-inner {
   .display-1 {
     font-size: 4.5rem;
   }
+  .display-2 {
+    font-size: 1.9rem;
+  }
 
   .section-header .display-1,
   .section-header p.lead {
@@ -1749,12 +1762,18 @@ input::-moz-focus-inner {
   .display-1 {
     font-size: 4.2rem;
   }
+  .display-2 {
+    font-size: 1.6rem;
+  }
 
 }
 
 @media only screen and (max-width:900px) {
   .display-1 {
     font-size: 4rem;
+  }
+  .display-2 {
+    font-size: 1.4rem;
   }
 
   .subhead {
@@ -1772,6 +1791,9 @@ input::-moz-focus-inner {
   .display-1 {
     font-size: 3.8rem;
   }
+  .display-2 {
+    font-size: 1.2rem;
+  }
 
 }
 
@@ -1779,6 +1801,9 @@ input::-moz-focus-inner {
   .display-1 {
     font-size: 3.6rem;
     margin-bottom: 3.6rem;
+  }
+  .display-2 {
+    font-size: 1rem;
   }
 
   .subhead {
@@ -1791,6 +1816,9 @@ input::-moz-focus-inner {
   .display-1 {
     font-size: 3.5rem;
   }
+  .display-2 {
+    font-size: 0.9rem;
+  }
 
 }
 
@@ -1798,7 +1826,9 @@ input::-moz-focus-inner {
   .display-1 {
     font-size: 3rem;
   }
-
+  .display-2 {
+    font-size: 0.9rem;
+  }
   .subhead {
     font-size: 1.4rem;
   }
@@ -1817,6 +1847,9 @@ input::-moz-focus-inner {
 @media only screen and (max-width:400px) {
   .display-1 {
     font-size: 2.8rem;
+  }
+  .display-2 {
+    font-size: 0.9rem;
   }
 
 }
@@ -2922,7 +2955,7 @@ html.no-csstransitions .home-content__main {
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
   margin-bottom: 4.8rem;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Montserrat",sans-serif;
   font-weight: 700;
   font-size: 3.6rem;
   line-height: 1;
@@ -2954,6 +2987,21 @@ html.no-csstransitions .home-content__main {
   }
 
 }
+/* ===================================================================
+ * # extra category: courses
+ *
+ * ------------------------------------------------------------------- */
+.s-courses {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+  background-image: url(https://ik.imagekit.io/goyhdy3jojq/bg/mouse-bg-resize_wN8kGXbZd.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1656310361374);
+  position: relative;
+  background-color: #151515;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 
 /* ===================================================================
  * # works
@@ -2965,7 +3013,8 @@ html.no-csstransitions .home-content__main {
 .s-works {
   padding-top: 18rem;
   padding-bottom: 18rem;
-  background-color: #FFFFFF;
+  background-color: #ebecec;
+  /*background-image: url(https://ik.imagekit.io/goyhdy3jojq/bg/services-bg_BkqMw6eYL.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415554581);*/
   position: relative;
 }
 
@@ -3002,7 +3051,7 @@ html.no-csstransitions .home-content__main {
 .item-folio__thumb a::after {
   z-index: 1;
   content: "";
-  font-family: sans-serif;
+  font-family: "Montserrat",sans-serif;
   font-size: 2.4rem;
   color: #FFFFFF;
   display: block;
