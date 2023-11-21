@@ -11,7 +11,7 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="1024" />
-    <meta property="og:url" content="https://angeliz-r.herokuapp.com/" />
+    <meta property="og:url" content="https://angeliz-r.github.io/a-z/" />
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,11 +61,10 @@
             <nav class="header-nav-wrap">
                 <ul class="header-nav">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a href="portfolio.html" title="portfolio">Portfolio</a></li>
+                    <li><a class="smoothscroll"  href="#feature" title="featured works">Featured Works</a></li>
                     <li><a class="smoothscroll"  href="#skills" title="skills">Skills</a></li>
                     <li><a class="smoothscroll"  href="#experience" title="experience">Experience</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-                    <li><a href="writing.html" title="writing">Writing</a></li>
                 </ul>
             </nav> <!-- end header-nav-wrap -->
             
@@ -95,18 +94,28 @@
                     <!--<a href="files/ReyesA_Resume_Exp.pdf" target="_blank" class="btn btn-animatedbg">
                          Download Resume
                     </a>-->
-                    <a href="portfolio.html" target="_blank" class="btn btn-animatedbg">
-                         View Portfolio
-                    </a>
+                    <!--<a href="portfolio.html" target="#portfolio" class="btn btn-animatedbg">
+                         View Portfolios
+                    </a>-->
+                    <label class="dropdown">
+                        <div class="btn btn-animatedbg-up dd-button">
+                          View Portfolios
+                        </div>
+                        <input type="checkbox" class="dd-input" id="test">
+                        <ul class="dd-menu">
+                          <li><a href="portfolio.html" title="Gamedev Portfolio" target="_blank">Gamedev Portfolio</a></li>
+                          <!--<li><a href="uiux.html" title="UI/UX Portfolio" target="_blank">UI/UX Portfolio</a></li>-->
+                          <li><a href="writing.html" title="Writing Portfolio" target="_blank">Writing Portfolio</a></li>
+                        </ul>
+                    </label>
                 </div>
-                <!-- video, maybe add a quick trailer/demo reel nalang in the future
+                <!-- video, maybe add a quick trailer/demo reel nalang in the future--
                 <div class="home-content__video">
                     <a class="video-link" href="https://player.vimeo.com/video/117310401?color=01aef0&title=0&byline=0&portrait=0" data-lity>
                         <span class="video-icon"></span>
                         <span class="video-text">Play Video</span>
                     </a>
                 </div> -->
-
             </div> <!-- end home-content__main -->
 
             <div class="home-content__scroll">
@@ -133,17 +142,198 @@
             <li>
                 <a href="https://medium.com/@angeliz-r"><i class="fab fa-medium" aria-hidden="true"></i><span>Medium</span></a>
             </li>
+            <li>
+                <a href="https://www.behance.net/angeliz-r"><i class="fab fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
             <!--<li>
                 <a href="https://angeliz_r.artstation.com/" target ="_blank"><i class="fab fa-artstation" aria-hidden="true"></i><span>ArtStation</span></a>
             </li>>-->
         </ul> <!-- end home-social -->
 
     </section> <!-- end s-home -->
-    <section section id="skills" class="s-contact target-section">
+     <!--start featured work-->
+     <section id="feature" class="s-contact target-section">
+        <div class="col-full">
+            <h3 data-num="01" class="subhead">Featured Works</h3>
+        </div>
+        <div class="portfolio block-1-4 block-m-1-3 block-tab-1-2 collapse"> <!--do not copy this div line-->
+            <div class="col-block item-folio" data-aos="fade-up"> <!--start copy here-->
+                <div class="item-folio__thumb">
+                    <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/gif/dev/acmiragev3_LnUoplWtd.gif?updatedAt=1697035071309" class="thumb-link" title="Assassin's Creed Mirage" data-size="1050x590">
+                        <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/acmirage@2x_XuqEbabPF.jpg?updatedAt=1697029618913" width="100%" height="100%" />
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        Assassin's Creed Mirage
+                    </h3>
+                    <p class="item-folio__cat">
+                        Ubisoft Philippines
+                    </p>
+                </div>
+
+                <!--<a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                    Project Link
+                </a>-->
+
+                <div class="item-folio__caption">
+                    <table>
+                        <tr>
+                            <td>
+                            <p class="timelineText">
+                                2023 | Technical Level Designer | Anvil Engine & C#
+                            </p>
+                            <p class= "folio-caption"> Worked on supporting the Level Design and Quest Design of the Sharqiyah District. Also created scripts and tools to address various quest and world issues. Collaborated locally and internationally with other Ubisoft studios (Singapore, Bordeaux, Sofia) in order to successfully ship the mandate.
+                            </p>
+                            </td>
+                            <td>
+                                <div class="home-content__video">
+                                <a class="video-link" href="https://www.youtube.com/watch?v=IRNOoOYVn80" data-lity>
+                                    <span class="video-icon"></span>
+                                    <span class="video-text">Play Game Trailer</span>
+                                </a>
+                                </div>
+                            </td>
+                        </tr>
+                        </table>
+                </div>
+
+            </div> <!-- end item-folio, end copy here -->
+            <div class="col-block item-folio" data-aos="fade-up"> <!--start copy here-->
+                <div class="item-folio__thumb">
+                    <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/gif/MilkTeaTycoon_1__lM5p7FJS5.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649417158665" class="thumb-link" title="Milk Tea Tycoon" data-size="590x1050">
+                        <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/milktea_2x_xXG3yFt-C.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415539598" width="100%" height="100%" />
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        Milk Tea Tycoon
+                    </h3>
+                    <p class="item-folio__cat">
+                        Ranida Games
+                    </p>
+                </div>
+
+                <!--<a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                    Project Link
+                </a>-->
+
+                <div class="item-folio__caption">
+                    <table>
+                        <tr>
+                            <td>
+                            <p class="timelineText">
+                                2019 | Androdid & iOS | Programmer | Unity & C#
+                            </p>
+                            <p class= "folio-caption">Milk Tea Tycoon is a mobile tycoon game where you run a Milk Tea (Boba) Shop, make your business grow, unlock new flavors and unlock new customers!
+                            </p>
+                            </td>
+                            <td>
+                            <div class="home-content__video">
+                            <a href="https://play.google.com/store/apps/details?id=com.RanidaGames.MilkTeaTycoon" target="_blank" >
+                                <!--<span class="video-icon"></span>-->
+                                <img src= "images/google-play.png"width = "60%" height = "60%">
+                                <!--<span class="video-text">Play Game Highlights</span>-->
+                            </a>
+                            </div>
+                            </td>
+                        </tr>
+                        </table>
+                </div>
+
+            </div> <!-- end item-folio, end copy here -->
+            <div class="col-block item-folio" data-aos="fade-up"> <!--start copy here-->
+
+                <div class="item-folio__thumb">
+                    <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/gif/dev/DHOLv2_BG266Pv5Y.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649418478846" class="thumb-link" title="Dark Heart of London" data-size="1050x590">
+                        <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/DHOL_2x_c6TRbY1m8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415533131" width="100%" height="100%" />
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        Dark Heart of London
+                    </h3>
+                    <p class="item-folio__cat">
+                        School Project: Advanced Production Elective 
+                    </p>
+                </div>
+
+                <!--<a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                    Project Link
+                </a>-->
+                <div class="item-folio__caption">
+                    <table>
+                        <tr>
+                            <td>
+                            <p class="timelineText">
+                                2020 | PC | Lead Developer, UI Artist | Unity & C#, Adobe Xd, Photoshop & Illustrator
+                            </p>
+                            <p class= "folio-caption">Dark Heart of London is a survival horror game where you play as an innocent soul whose life was stripped away by the infamous Whitechapel murderer in the year of 1888. With your soul trapped in your home, explore the mansion and find the clues to piece together how your family had died at the hands of the murderer.
+                            </p>
+                            </td>
+                            <td>
+                            <div class="home-content__video">
+                            <a class="video-link" href="https://youtu.be/A0mH5Hr6tMM" data-lity>
+                                <span class="video-icon"></span>
+                                <span class="video-text">Play Game Highlights</span>
+                            </a>
+                            </div>
+                            </td>
+                        </tr>
+                        </table>
+                </div>
+            </div> <!-- end item-folio, end copy here -->
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/gif/dev/revision_Sx2XC3izQ.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649415677681" class="thumb-link" title="Re:Vision" data-size="1050x590">
+                        <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/revision_2x_4iTTyfPVO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415573110" width="100%" height="100%">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        Re: Vision
+                    </h3>
+                    <p class="item-folio__cat">
+                        School Project:Thesis 2
+                    </p>
+
+                </div>
+                <!--<a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                    Project Link
+                </a>-->
+
+                <div class="item-folio__caption"> 
+                    <table>
+                    <tr>
+                        <td>
+                        <p class="timelineText">
+                        2019 | PC | Game & UI Developer, UI/UX Designer | Unity & C#
+                        </p>
+                        <p class= "folio-caption">Re: Vision is a political simulation game for the PC where you are the editor-in-chief who decides which articles are shown or are thrown away. Days before the elections, parties want to reel in the public, and they’re not afraid to do anything to make that happen. How will you decide? Will you give in, or will you be taken out?</p>
+                        </td>
+                        <td>
+                        <div class="home-content__video">
+                        <a class="video-link" href="https://youtu.be/QRR_8aoNQx4" data-lity>
+                            <span class="video-icon"></span>
+                            <span class="video-text">Play Game Trailer</span>
+                        </a>
+                        </div>
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+            </div> <!-- end item-folio -->
+    </section> <!-- feature end -->
+    <section section id="skills" class="s-stats target-section">
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 data-num="01" class="subhead">SKILLS</h3>
+                <h3 data-num="02" class="subhead">SKILLS</h3>
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h1 class="display-1 display-1--light">
@@ -206,8 +396,8 @@
     </section> <!-- end skils -->
         <!-- works
     ================================================== -->
-    <!--
-    <section id="works" class="s-stats">
+    
+    <!--<section id="works" class="s-stats">
         <div class="row section-header" data-aos="fade-up">
             <br><br>
             <div class="col-full">
@@ -224,7 +414,7 @@
      <!-- stats
     ================================================== -->
     
-    <section id="stats" class="s-stats">
+    <!--<section id="stats" class="s-stats">
         <div class="row stats-block block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">   
             <div class="col-block item-stats ">
                 <div class="item-stats__count">2</div>
@@ -243,14 +433,14 @@
                 <h5>Yrs. of Industry Exp</h5> 
             </div>
 
-        </div> 
-    </section>
+        </div>
+    </section>-->
       <!-- experience
     ================================================== -->
     <section id="experience" class="s-contact target-section">
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 data-num="02" class="subhead" data-aos="fade-up">Experience</h3>
+                <h3 data-num="03" class="subhead" data-aos="fade-up">Experience</h3>
                 
                 <!--timeline ============================ -->
                 <h1 class="display-1 display-1--light" data-aos="fade-up">Work Experience</h1>
@@ -265,7 +455,9 @@
                                     </p>
                                     <p class="timelineSubText" 
                                     style="padding-left: 1em;">
-                                    • Responsible for creating tools in the game engine and supporting Level Designers to optimize their workflow.
+                                    • Responsible for creating tools in the Anvil game engine to optimize the team’s workflow.<br>
+                                    • Responsible for supporting Level Designers, Quest Designers, and related teams in order to address technical design issues.<br>
+                                    • Regularly collaborate with various Ubisoft studios across the globe.   
                                     </p>
                             </div>
                         </div>
@@ -409,6 +601,7 @@
                     <a class="display-socials" href="https://twitter.com/_angeliz_r" target ="_blank"><i class="fab fa-twitter" aria-hidden="true" height="40%" width="40%"></i></a>
                     <a class="display-socials" href="https://github.com/angeliz-r" target ="_blank"><i class="fab fa-github" aria-hidden="true" height="40%" width="40%"></i></a>
                     <a class="display-socials" href="https://medium.com/@angeliz-r" target ="_blank"><i class="fab fa-medium" aria-hidden="true" height="40%" width="40%"></i></a>
+                    <a class="display-socials" href="https://www.behance.net/angeliz-r" target ="_blank"><i class="fab fa-behance" aria-hidden="true" height="40%" width="40%"></i></a>
                 </h1>
 
             </div>

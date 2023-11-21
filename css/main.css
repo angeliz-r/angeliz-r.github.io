@@ -96,7 +96,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #035D5C;
+  color: #5d0303;
 }
 
 a:hover,
@@ -1037,7 +1037,107 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
+/*===================================================================
+DROPDOWN BTN
+---------------------------------------------------------------------*/
+.dropdown {
+  display: inline-block;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  height: 5.4rem;
+  line-height: 5rem;
+  padding: 0 3rem;
+  margin: 0 .3rem 1.2rem 0;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s ease-in-out;
+}
 
+.dd-button {
+  display: inline-block;
+  border-color: #ffcc32;
+  height: 6.6rem;
+  line-height: 6.2rem;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+  font-size: medium;
+}
+
+.dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 4rem;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-top: -1.1rem;
+  top: 50%;
+  z-index: 1;
+}
+
+.dd-button:hover {
+  background-color: #ffcc32;
+  z-index: 1;
+}
+.dd-button:hover::before {
+  height: 100%;
+}
+.dd-button:hover::after {
+  top: 100%;
+  z-index: 1;
+}
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  padding:0;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  list-style-type: none;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+.dd-menu li {
+  /*padding: 10px 20px;*/
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li a:hover {
+  color: #ffffff;
+
+}
+
+.dd-menu li a {
+  /*margin: -10px -20px;
+  padding: 10px 20px;*/
+}
 
 /* =================================================================== 
  * # additional components
@@ -2056,7 +2156,7 @@ input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## navigation 
  * ------------------------------------------------------------------- */
-.header-nav-wrap {
+ .header-nav-wrap {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 11px;
@@ -2072,6 +2172,7 @@ input::-moz-focus-inner {
   list-style: none;
   margin: 0;
   height: 72px;
+  /*overflow: hidden;*/
 }
 
 .header-nav li {
@@ -2083,6 +2184,7 @@ input::-moz-focus-inner {
 .header-nav li a {
   display: block;
   line-height: 72px;
+  text-decoration: none;                                                                     
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -2168,7 +2270,7 @@ input::-moz-focus-inner {
   .header-menu-toggle {
     display: block;
   }
-
+  
 }
 
 @media only screen and (max-width:400px) {
@@ -2197,10 +2299,7 @@ input::-moz-focus-inner {
   .header-nav-wrap {
     display: block !important;
   }
-
 }
-
-
 
 /* ===================================================================
  * # home
@@ -3675,6 +3774,13 @@ html.no-csstransitions .home-content__main {
   padding-top: 18rem;
   padding-bottom: 12rem;
   background-color: #151515;
+  position: relative;
+}
+
+.s-contact-light {
+  padding-top: 18rem;
+  padding-bottom: 12rem;
+  background-color: #e2e2e2;
   position: relative;
 }
 
