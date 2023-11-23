@@ -937,7 +937,7 @@ input[type="button"] {
   line-height: 5rem;
   padding: 0 3rem;
   margin: 0 .3rem 1.2rem 0;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
@@ -945,7 +945,7 @@ input[type="button"] {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #ffcc32;
-  border: .2rem solid #c5c5c5;
+  border: .2rem solid #ffcc32;
 }
 
 .btn:hover,
@@ -958,9 +958,9 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background-color: #b8b8b8;
-  border-color: #b8b8b8;
-  color: #000000;
+  background-color: #ffcc32;
+  border-color: #f48520;
+  color: #f48520;
   outline: 0;
 }
 
@@ -973,7 +973,7 @@ input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
   background: #ffcc32;
   border-color: #ffcc32;
-  color: #FFFFFF;
+  color: #f48520;
 }
 
 .btn.btn--primary:hover,
@@ -1041,31 +1041,27 @@ input::-moz-focus-inner {
 DROPDOWN BTN
 ---------------------------------------------------------------------*/
 .dropdown {
-  display: inline-block;
+  display: flex;
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: .3rem;
   height: 5.4rem;
   line-height: 5rem;
   padding: 0 3rem;
-  margin: 0 .3rem 1.2rem 0;
-  color: #000000;
+  /*margin: 0 .3rem 1.2rem 0;*/
+  margin: auto;
   text-decoration: none;
   text-align: center;
-  white-space: nowrap;
-  -webkit-transition: all 0.3s ease-in-out;
 }
 
 .dd-button {
   display: inline-block;
-  border-color: #ffcc32;
   height: 6.6rem;
   line-height: 6.2rem;
   cursor: pointer;
-  white-space: nowrap;
   overflow: hidden;
   z-index: 1;
   font-size: medium;
@@ -1091,9 +1087,10 @@ DROPDOWN BTN
 }
 
 .dd-button:hover {
+  z-index: 2;
   background-color: #ffcc32;
-  z-index: 1;
 }
+
 .dd-button:hover::before {
   height: 100%;
 }
@@ -1109,9 +1106,11 @@ DROPDOWN BTN
 .dd-menu {
   position: absolute;
   top: 100%;
-  padding:0;
+  /*padding:0;
   margin-top: 1rem;
-  margin-left: 3rem;
+  margin-left: 3rem;*/
+  margin: 1rem .3rem 1rem 0;
+  background-color: #ffcc32;
   list-style-type: none;
 }
 
@@ -1124,19 +1123,25 @@ DROPDOWN BTN
 } 
 
 .dd-menu li {
-  /*padding: 10px 20px;*/
   cursor: pointer;
   white-space: nowrap;
+  padding: 0 3rem;
+}
+
+.dd-menu li a {
+  color: #ffffff;
 }
 
 .dd-menu li a:hover {
   color: #ffffff;
 
 }
-
-.dd-menu li a {
-  /*margin: -10px -20px;
-  padding: 10px 20px;*/
+.dd-menu li:hover {
+  background-color: #f48520;
+}
+.dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #ffffff;
 }
 
 /* =================================================================== 
@@ -2379,7 +2384,7 @@ DROPDOWN BTN
  * ## home video link
  * ------------------------------------------------------------------- */
 .home-content__video {
-  position: ;
+  /*position: ;*/
   /*top: 7.2rem;*/
   /*right: 12rem;*/
   right: 0rem;
