@@ -5,9 +5,9 @@
     ================================================== -->
     <meta charset="utf-8">
     <title>Gamedev Portfolio</title>
-    <meta name="description" content="Portfolio site">
+    <meta name="description" content="Gamedev Portfolio">
     <meta name="author" content="Angeliz Reyes">
-    <meta property="og:image" content="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Merriweather:300,400,400i,700|Libre+Baskerville:700&display=swap" />
+    <meta property="og:image" content="images/bg/hero-bg.jpg" />
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
@@ -58,6 +58,7 @@
             <nav class="header-nav-wrap">
                 <ul class="header-nav">
                     <li class="current"><a href="index.html" title="home">Home</a></li>
+                    <li><a class="smoothscroll" href="#ship" title="ship">Published Games</a></li>
                     <li><a class="smoothscroll" href="#dev" title="dev">Dev Projects</a></li>
                     <li><a class="smoothscroll" href="#art" title="art">Art Projects</a></li>
                 </ul>
@@ -69,123 +70,159 @@
     </header> <!-- end s-header -->
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="https://ik.imagekit.io/goyhdy3jojq/bg/portfolio-header-bg_oheZHuqQz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415536283" data-position-y=center>
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="https://ik.imagekit.io/goyhdy3jojq/bg/acmirage-bg_l6sf58EPT.jpg?updatedAt=1700748022859" data-position-y=center>
         <div class="shadow-overlay"></div>
         <div class="home-content">
             <div class="row home-content__main">
                 <h1>
-                Here are some of my works, with more to come in the future!
+                Here are the games I've worked on, with more to come!
                 </h1>
+                    <a class="btn btn-animatedbg smoothscroll" href="#ship">
+                        See Published Games
+                    </a>
+                    <!--<br>
                     <a class="btn btn-animatedbg smoothscroll" href="#dev">
                         See Dev Projects
                     </a>
-                    <br>
                     <a class="btn btn-animatedbg smoothscroll" href="#art">
                         See Art Projects
-                    </a>
+                    </a>-->
             </div>
             <div class="home-content__scroll">
                 <a class="scroll-link smoothscroll">
                     Scroll
                 </a>
             </div>
+            <ul class="home-social">
+                <!--<li>
+                    <a href="https://www.facebook.com/angeliz.reyes.5/" target ="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                </li>-->       
+                <li>
+                    <a href="https://www.linkedin.com/in/angeliz-reyes-09a125116/" target ="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/_angeliz_r"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/angeliz-r"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@angeliz-r"><i class="fab fa-medium" aria-hidden="true"></i><span>Medium</span></a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/angeliz-r"><i class="fab fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+                </li>
+                <!--<li>
+                    <a href="https://angeliz_r.artstation.com/" target ="_blank"><i class="fab fa-artstation" aria-hidden="true"></i><span>ArtStation</span></a>
+                </li>>-->
+            </ul> <!-- end home-social -->
         </div> <!-- end home-content -->
     </section> <!--end s-home -->
+        <!--=======================================start ship===============================================-->
+        <section id="ship" class="s-contact target-section">
+            <div class="col-full">
+                <h3 data-num="01" class="subhead">Published Games</h3>
+            </div>
+            <div class="portfolio block-1-4 block-m-1-3 block-tab-1-2 collapse"> <!--do not copy this div line-->
+                <div class="col-block item-folio" data-aos="fade-up"> <!--start copy here-->
+                    <div class="item-folio__thumb">
+                        <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/gif/dev/acmiragev3_LnUoplWtd.gif?updatedAt=1697035071309" class="thumb-link" title="Assassin's Creed Mirage" data-size="1050x590">
+                            <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/acmirage@2x_XuqEbabPF.jpg?updatedAt=1697029618913" width="100%" height="100%" />
+                        </a>
+                    </div>
+    
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">
+                            Assassin's Creed Mirage
+                        </h3>
+                        <p class="item-folio__cat">
+                            Ubisoft Philippines
+                        </p>
+                    </div>
+    
+                    <!--<a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                        Project Link
+                    </a>-->
+    
+                    <div class="item-folio__caption">
+                        <table>
+                            <tr>
+                                <td>
+                                <p class="timelineText">
+                                    2023 | Technical Level Designer | Anvil Engine & C#
+                                </p>
+                                <p class= "folio-caption"> Worked on supporting the Level Design and Quest Design of the Sharqiyah District. Also created scripts and tools to address various quest and world issues. Collaborated locally and internationally with other Ubisoft studios (Singapore, Bordeaux, Sofia) in order to successfully ship the mandate.
+                                </p>
+                                </td>
+                                <td>
+                                    <div class="home-content__video">
+                                    <a class="video-link" href="https://www.youtube.com/watch?v=IRNOoOYVn80" data-lity>
+                                        <span class="video-icon"></span>
+                                        <span class="video-text">Play Game Trailer</span>
+                                    </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </table>
+                    </div>
+    
+                </div> <!-- end item-folio, end copy here -->
+                <div class="col-block item-folio" data-aos="fade-up"> <!--start copy here-->
+                    <div class="item-folio__thumb">
+                        <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/gif/MilkTeaTycoon_1__lM5p7FJS5.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649417158665" class="thumb-link" title="Milk Tea Tycoon" data-size="590x1050">
+                            <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/milktea_2x_xXG3yFt-C.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415539598" width="100%" height="100%" />
+                        </a>
+                    </div>
+    
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">
+                            Milk Tea Tycoon
+                        </h3>
+                        <p class="item-folio__cat">
+                            Ranida Games
+                        </p>
+                    </div>
+    
+                    <!--<a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                        Project Link
+                    </a>-->
+    
+                    <div class="item-folio__caption">
+                        <table>
+                            <tr>
+                                <td>
+                                <p class="timelineText">
+                                    2019 | Androdid & iOS | Programmer | Unity & C#
+                                </p>
+                                <p class= "folio-caption">Milk Tea Tycoon is a mobile tycoon game where you run a Milk Tea (Boba) Shop, make your business grow, unlock new flavors and unlock new customers!
+                                </p>
+                                </td>
+                                <td>
+                                <div class="home-content__video">
+                                <a href="https://play.google.com/store/apps/details?id=com.RanidaGames.MilkTeaTycoon" target="_blank" >
+                                    <!--<span class="video-icon"></span>-->
+                                    <img src= "images/google-play.png"width = "60%" height = "60%">
+                                    <!--<span class="video-text">Play Game Highlights</span>-->
+                                </a>
+                                </div>
+                                </td>
+                            </tr>
+                            </table>
+                    </div>
+    
+                </div> <!-- end item-folio, end copy here -->
+        </section> 
+        <!--=================================================== end ship ========================================================-->
+        <div>
+            <br>
+            <p style="text-align:center" ><a class="btn btn-animated-up btn-animatedbg-up smoothscroll" title="Back to Top" href="#top"><img src="images/icons/icon-arrow-up.svg" width="50%" height="50%"/></a></p>
+        </div>
     <!--start dev-->
     <section id="dev" class="s-contact target-section">
         <div class="col-full">
-            <h3 data-num="01" class="subhead">Dev Projects</h3>
+            <h3 data-num="02" class="subhead">Dev Projects</h3>
         </div>
         <div class="portfolio block-1-4 block-m-1-3 block-tab-1-2 collapse"> <!--do not copy this div line-->
-            <div class="col-block item-folio" data-aos="fade-up"> <!--start copy here-->
-                <div class="item-folio__thumb">
-                    <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/gif/dev/acmiragev3_LnUoplWtd.gif?updatedAt=1697035071309" class="thumb-link" title="Assassin's Creed Mirage" data-size="1050x590">
-                        <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/acmirage@2x_XuqEbabPF.jpg?updatedAt=1697029618913" width="100%" height="100%" />
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        Assassin's Creed Mirage
-                    </h3>
-                    <p class="item-folio__cat">
-                        Ubisoft Philippines
-                    </p>
-                </div>
-
-                <!--<a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>-->
-
-                <div class="item-folio__caption">
-                    <table>
-                        <tr>
-                            <td>
-                            <p class="timelineText">
-                                2023 | Technical Level Designer | Anvil Engine & C#
-                            </p>
-                            <p class= "folio-caption"> Worked on supporting the Level Design and Quest Design of the Sharqiyah District. Also created scripts and tools to address various quest and world issues. Collaborated locally and internationally with other Ubisoft studios (Singapore, Bordeaux, Sofia) in order to successfully ship the mandate.
-                            </p>
-                            </td>
-                            <td>
-                                <div class="home-content__video">
-                                <a class="video-link" href="https://www.youtube.com/watch?v=IRNOoOYVn80" data-lity>
-                                    <span class="video-icon"></span>
-                                    <span class="video-text">Play Game Trailer</span>
-                                </a>
-                                </div>
-                            </td>
-                        </tr>
-                        </table>
-                </div>
-
-            </div> <!-- end item-folio, end copy here -->
-            <div class="col-block item-folio" data-aos="fade-up"> <!--start copy here-->
-                <div class="item-folio__thumb">
-                    <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/gif/MilkTeaTycoon_1__lM5p7FJS5.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649417158665" class="thumb-link" title="Milk Tea Tycoon" data-size="590x1050">
-                        <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/milktea_2x_xXG3yFt-C.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415539598" width="100%" height="100%" />
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        Milk Tea Tycoon
-                    </h3>
-                    <p class="item-folio__cat">
-                        Ranida Games
-                    </p>
-                </div>
-
-                <!--<a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>-->
-
-                <div class="item-folio__caption">
-                    <table>
-                        <tr>
-                            <td>
-                            <p class="timelineText">
-                                2019 | Androdid & iOS | Programmer | Unity & C#
-                            </p>
-                            <p class= "folio-caption">Milk Tea Tycoon is a mobile tycoon game where you run a Milk Tea (Boba) Shop, make your business grow, unlock new flavors and unlock new customers!
-                            </p>
-                            </td>
-                            <td>
-                            <div class="home-content__video">
-                            <a href="https://play.google.com/store/apps/details?id=com.RanidaGames.MilkTeaTycoon" target="_blank" >
-                                <!--<span class="video-icon"></span>-->
-                                <img src= "images/google-play.png"width = "60%" height = "60%">
-                                <!--<span class="video-text">Play Game Highlights</span>-->
-                            </a>
-                            </div>
-                            </td>
-                        </tr>
-                        </table>
-                </div>
-
-            </div> <!-- end item-folio, end copy here -->
-
-
             <div class="col-block item-folio" data-aos="fade-up"> <!--start copy here-->
 
                 <div class="item-folio__thumb">
@@ -518,11 +555,12 @@
                 <br>
                 <p style="text-align:center" ><a class="btn btn-animated-up btn-animatedbg-up smoothscroll" title="Back to Top" href="#top"><img src="images/icons/icon-arrow-up.svg" width="50%" height="50%"/></a></p>
             </div>
-    </section> <!-- end dev -->
+    </section> 
+    <!--=================================================== end dev ========================================================-->
     <!--start art-->
     <section id="art" class="s-contact target-section">
         <div class="col-full">
-            <h3 data-num="02" class="subhead">Art Projects</h3>
+            <h3 data-num="03" class="subhead">Art Projects</h3>
         </div>
         <div class="portfolio block-1-4 block-m-1-3 block-tab-1-2 collapse"> <!--do not copy this div line-->
 
