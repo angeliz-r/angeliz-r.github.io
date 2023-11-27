@@ -876,7 +876,7 @@ label > input[type="radio"] {
 /* ------------------------------------------------------------------- 
  * ## Style Placeholder Text
  * ------------------------------------------------------------------- */
- /*
+ 
 ::-webkit-input-placeholder {
   color: rgba(13, 13, 13, 0.65);
 }
@@ -896,7 +896,7 @@ label > input[type="radio"] {
 .placeholder {
   color: rgba(13, 13, 13, 0.65) !important;
 }
-*/
+
 
 /* ------------------------------------------------------------------- 
  * ## Change Autocomplete styles in Chrome
@@ -1152,7 +1152,7 @@ DROPDOWN BTN
 /* ------------------------------------------------------------------- 
  * ## alert box
  * ------------------------------------------------------------------- */
- /*
+ 
 .alert-box {
   padding: 2.1rem 4rem 2.1rem 3rem;
   position: relative;
@@ -1194,7 +1194,7 @@ DROPDOWN BTN
   background-color: #fff099;
   color: #bba31b;
 }
-*/
+
 /* ------------------------------------------------------------------- 
  * ## additional typo styles
  * ------------------------------------------------------------------- */
@@ -1243,7 +1243,7 @@ DROPDOWN BTN
 
 /* dictionary definition style 
  * ----------------------------------------------- */
- /*
+ 
 .dictionary-style dt {
   display: inline;
   counter-reset: definitions;
@@ -1262,7 +1262,7 @@ DROPDOWN BTN
 .dictionary-style dd:before {
   content: counter(definitions, decimal) ". ";
 }
-*/
+
 /** 
  * Pull Quotes
  * -----------
@@ -2861,7 +2861,7 @@ html.no-csstransitions .home-content__main {
  * # about
  *
  * ------------------------------------------------------------------- */
- /*
+ 
 .s-about {
   padding-top: 18rem;
   padding-bottom: 18rem;
@@ -2927,12 +2927,12 @@ html.no-csstransitions .home-content__main {
   background-image: url(../images/icons/icon-documentation.svg);
 }
 
-*/
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * about
  * ------------------------------------------------------------------- */
- /*
+ 
 @media only screen and (max-width:1200px) {
   .s-about {
     padding-top: 16.2rem;
@@ -2998,7 +2998,7 @@ html.no-csstransitions .home-content__main {
   }
 
 }
-*/
+
 
 
 /* ===================================================================
@@ -3123,7 +3123,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .portfolio {
-  margin-top: 9rem;
+  margin-top: 6rem;
 }
 
 .item-folio {
@@ -3343,7 +3343,7 @@ html.no-csstransitions .home-content__main {
  * # testimonials
  *
  * ------------------------------------------------------------------- */
- /*
+ 
 .testimonials-wrap {
   margin-top: 7.8rem;
 }
@@ -3469,12 +3469,12 @@ html.no-csstransitions .home-content__main {
   font-size: 1.4rem;
   line-height: 2.7rem;
 }
-*/
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * testimonials
  * ------------------------------------------------------------------- */
- /*
+ 
 @media only screen and (max-width:1000px) {
   .testimonials__slide {
     text-align: center;
@@ -3545,7 +3545,7 @@ html.no-csstransitions .home-content__main {
   }
 
 }
-*/
+
 
 /* ===================================================================
  * # clients
@@ -3776,7 +3776,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-  padding-top: 18rem;
+  padding-top: 10rem;
   padding-bottom: 12rem;
   background-color: #151515;
   position: relative;
