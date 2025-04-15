@@ -66,6 +66,15 @@
                     <li><a class="smoothscroll"  href="#skills" title="skills">Skills</a></li>
                     <li><a class="smoothscroll"  href="#experience" title="experience">Experience</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                    <li class="dropdown">
+                        <input type="checkbox" class="dd-input" id="portfolio-toggle" />
+                        <label class="dd-button" for="portfolio-toggle">Portfolios</label>
+                        <ul class="dd-menu">
+                          <li><a href="portfolio.html" title="Gamedev Portfolio" target="_blank">Gamedev</a></li>
+                          <li class="divider"></li>
+                          <li><a href="writing.html" title="Writing Portfolio" target="_blank">Writing</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav> <!-- end header-nav-wrap -->
             
@@ -88,25 +97,10 @@
                 </h1>
                 <p class="subheadPlain">I code games on most days. On other days, I cry over spreadsheets.</p>
 
-                <div class="home-content__button" id="portfolio"></div>
-                    <!--<a href="files/ReyesA_Resume_Exp.pdf" target="_blank" class="btn btn-animatedbg">
-                         Download Resume
+                <!--<div class="home-content__button" id="portfolio"></div>
+                    <a href="" target="_blank" class="btn btn-animatedbg">
+                        View Show Reel
                     </a>-->
-                    <!--<a href="portfolio.html" target="#portfolio" class="btn btn-animatedbg">
-                         View Portfolios
-                    </a>-->
-                    <label class="dropdown">
-                        <div class="btn btn-animatedbg-up dd-button">
-                          View Portfolios ↓
-                        </div>
-                        <input type="checkbox" class="dd-input">
-                        <ul class="dd-menu">
-                          <li><a href="portfolio.html" title="Gamedev Portfolio" target="_blank">Gamedev Portfolio</a></li>
-                          <li class="divider"></li>
-                          <!--<li><a href="uiux.html" title="UI/UX Portfolio" target="_blank">UI/UX Portfolio</a></li>-->
-                          <li><a href="writing.html" title="Writing Portfolio" target="_blank">Writing Portfolio</a></li>
-                        </ul>
-                    </label>
                 </div>
                 <!-- video, maybe add a quick trailer/demo reel nalang in the future--
                 <div class="home-content__video">
@@ -140,9 +134,9 @@
             <li>
                 <a href="https://medium.com/@angeliz-r"><i class="fab fa-medium" aria-hidden="true"></i><span>Medium</span></a>
             </li>
-            <li>
+            <!--<li>
                 <a href="https://www.behance.net/angeliz-r"><i class="fab fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
+            </li>-->
             <!--<li>
                 <a href="https://angeliz_r.artstation.com/" target ="_blank"><i class="fab fa-artstation" aria-hidden="true"></i><span>ArtStation</span></a>
             </li>>-->
@@ -152,15 +146,15 @@
      <!--start featured work-->
     <section id="feature" class="s-contact target-section">
         <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
+            <div>
                 <h3 data-num="01" class="subhead">FEATURED WORKS</h3>
             </div>
         </div>
-        <div class="portfolio block-1-4 block-m-1-3 block-tab-1-2 collapse" style="padding-top: -1rem; padding-bottom: -1rem; margin-bottom: 0rem;"> <!--do not copy this div line-->
+        <div class="portfolio block-1-3 block-m-1-2 block-tab-1-2 collapse"> <!--do not copy this div line-->
             <div class="col-block item-folio" data-aos="fade-up"> <!--start copy here-->
                 <div class="item-folio__thumb">
                     <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/gif/dev/skullandbonesv2_772Snsd-6.gif?updatedAt=1710079436166" class="thumb-link" title="Skull and Bones" data-size="1050x590">
-                        <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/skullandbones@2x_LsYxOzZa-.jpg?updatedAt=1710076116214" width="100%" height="100%" />
+                        <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/skullandbones@2x_LsYxOzZa-.jpg?updatedAt=1710076116214" width="100%" height="100%"/>
                     </a>
                 </div>
 
@@ -386,47 +380,6 @@
                         <a class="video-link" href="https://www.youtube.com/watch?v=WxtvdD3Vu-c" data-lity>
                             <span class="video-icon"></span>
                             <span class="video-text">Play Game Trailer</span>
-                        </a>
-                        </div>
-                        </td>
-                    </tr>
-                    </table>
-                </div>
-
-            </div> <!-- end item-folio -->
-            <div class="col-block item-folio" data-aos="fade-up">
-
-                <div class="item-folio__thumb">
-                    <a href="https://ik.imagekit.io/goyhdy3jojq/portfolio/gallery/jpg/g-syncorsink_bFMBB7_To.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649418538720" class="thumb-link" title="Sync or Sink" data-size="1050x590">
-                        <img src="https://ik.imagekit.io/goyhdy3jojq/portfolio/thumbnail/syncorsink_2x_p_csujktTZ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649415541249" width="100%" height="100%">
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        Sync or Sink
-                    </h3>
-                    <p class="item-folio__cat">
-                        ESGS: Game On 2018 Entry
-                    </p>
-                </div>
-
-                <!--<a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>-->
-
-                <div class="item-folio__caption">
-                    <table>
-                    <tr>
-                        <td>
-                        <p class="timelineText">2019 | Android Mobile AR, Tabletop | Project Manager, UI/UX Designer & Artist | Adobe Photoshop</p>
-                        <p class= "folio-caption">Sync or Sink is an AR tabletop game for android that puts you in the midst of a natural disaster. Unprepared and with the first floor of your home flooded, you and your family rush to around your home, following the DCRMC’s instructions to prepare a 72 hour disaster kit. With the flood rising at an alarming rate, you must gather and build what you can with the help of the DCRMC to survive!</p>
-                        </td>
-                        <td>
-                        <div class="home-content__video">
-                        <a class="video-link" href="https://www.youtube.com/watch?v=ZnioFETdN08" data-lity>
-                            <span class="video-icon"></span>
-                            <span class="video-text">See Gameplay</span>
                         </a>
                         </div>
                         </td>
@@ -742,6 +695,26 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <!-- close dropdowns on scroll-->
+    <script> 
+        window.addEventListener('scroll', function () {
+          const dropdown = document.getElementById('portfolio-toggle');
+          if (dropdown && dropdown.checked) {
+            dropdown.checked = false;
+          }
+        });
+        document.addEventListener('click', function (e) {
+        const toggle = document.getElementById('portfolio-toggle');
+        const dropdown = document.querySelector('.dropdown');
+    
+        if (toggle && !dropdown.contains(e.target)) {
+            toggle.checked = false;
+        }
+        });
+        window.addEventListener('scroll', () => {
+        const input = document.getElementById('portfolio-toggle');
+        if (input) input.checked = false;
+        });
+    </script>
 </body>
 </html>

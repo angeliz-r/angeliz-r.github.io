@@ -62,11 +62,20 @@
             <nav class="header-nav-wrap">
                 <ul class="header-nav">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll" href="#portfolio" title="medium-portfolio">Portfolio</a></li>
-                    <li><a class="smoothscroll"  href="#courses" title="courses">Certificates</a></li>
+                    <!--<li><a class="smoothscroll"  href="#home" title="portfolio">Portfolio</a></li>-->
+                    <li><a class="smoothscroll"  href="#feature" title="featured works">Featured Works</a></li>
+                    <li><a class="smoothscroll"  href="#skills" title="skills">Skills</a></li>
                     <li><a class="smoothscroll"  href="#experience" title="experience">Experience</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-                    <li class="current"><a href="index.html" title="home">Game Dev</a></li>
+                    <li class="dropdown">
+                        <input type="checkbox" class="dd-input" id="portfolio-toggle" />
+                        <label class="dd-button" for="portfolio-toggle">Portfolios</label>
+                        <ul class="dd-menu">
+                          <li><a href="portfolio.html" title="Gamedev Portfolio" target="_blank">Gamedev</a></li>
+                          <li class="divider"></li>
+                          <li><a href="writing.html" title="Writing Portfolio" target="_blank">Writing</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav> <!-- end header-nav-wrap -->
             
@@ -356,5 +365,26 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+        <!-- close dropdowns on scroll-->
+        <script> 
+            window.addEventListener('scroll', function () {
+              const dropdown = document.getElementById('portfolio-toggle');
+              if (dropdown && dropdown.checked) {
+                dropdown.checked = false;
+              }
+            });
+            document.addEventListener('click', function (e) {
+            const toggle = document.getElementById('portfolio-toggle');
+            const dropdown = document.querySelector('.dropdown');
+        
+            if (toggle && !dropdown.contains(e.target)) {
+                toggle.checked = false;
+            }
+            });
+            window.addEventListener('scroll', () => {
+            const input = document.getElementById('portfolio-toggle');
+            if (input) input.checked = false;
+            });
+        </script>
 </body>
 </html>
