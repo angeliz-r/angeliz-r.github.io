@@ -2478,6 +2478,28 @@ label.dd-button {
   background-color: #ffcc32;
 }
 
+@media screen and (max-width: 600px) {
+  .video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-content__video .video-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-content__video .video-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .home-content__video .video-text {
+    display: block;
+    text-align: center;
+  }
+}
+
 /* ------------------------------------------------------------------- 
  * ## home scroll
  * ------------------------------------------------------------------- */
@@ -3388,6 +3410,7 @@ item-folio__thumb a {
 
 }
 
+/*
 @media only screen and (max-width:450px) {
   .item-folio {
     width: 100% !important;
@@ -3397,7 +3420,7 @@ item-folio__thumb a {
     margin-right: 0;
   }
 
-}
+}*/
 
 /* CONVERT TO CARD */
 @media screen and (max-width: 600px) {
@@ -3429,6 +3452,14 @@ item-folio__thumb a {
     float: none !important;
   }
 
+  .item-folio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
   .item-folio__thumb {
     width: 100px;
     height: 100px;
@@ -3436,55 +3467,53 @@ item-folio__thumb a {
     overflow: hidden;
     border-radius: 8px;
     padding: 0;
-    margin: 0;
-  }
-
-  .item-folio__thumb a {
+    flex: 1 1 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    object-position: center;
     display: block;
-    width: 100%;
-    height: 100%;
   }
 
   .item-folio__thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
     border-radius: 4px;
   }
 
+  .item-folio__thumb,
   .item-folio__text {
-    margin-left: 1rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    position: static;
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    flex: 1 1 50%;
   }
 
-  .item-folio__title {
-    font-size: 1rem;
-    margin: 0 0 0.25rem 0;
-    color: #fff;
+  .item-folio__text {
+    padding: 10px 0;
+    background: transparent;
   }
 
   .item-folio__cat {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    margin: 0 0 0.25rem 0;
+    position: static !important;
+    transform: none !important;
+    display: block !important;
+    opacity: 1 !important;
   }
+    /* Cancel hover effects on mobile */
+    .item-folio:hover .item-folio__text {
+      opacity: 1;
+      transform: none;
+    }
 
-  .item-folio__caption,
-  .item-folio__project-link,
-  .home-content__video {
-    display: none !important;
-  }
-
-  .item-folio__thumb a::before,
-  .item-folio__thumb a::after {
-    display: none !important;
-    content: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-  }
 }
 /* ===================================================================
  * # testimonials
