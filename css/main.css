@@ -959,8 +959,8 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   background-color: #ffcc32;
-  border-color: #f48520;
-  color: #f48520;
+  /*border-color: #f48520;
+  color: #f48520;*/
   outline: 0;
 }
 
@@ -973,7 +973,7 @@ input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
   background: #ffcc32;
   border-color: #ffcc32;
-  color: #f48520;
+  /*color: #f48520;*/
 }
 
 .btn.btn--primary:hover,

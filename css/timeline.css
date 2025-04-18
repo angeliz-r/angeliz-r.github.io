@@ -1,13 +1,10 @@
-
 * {
   box-sizing: border-box;
 }
-/*
-body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
+
+html {
+  scroll-padding-top: 100px; /* Adjust to your header height */
 }
-*/
 
 .timelineText {
   font-family: "Montserrat", serif;
@@ -128,35 +125,230 @@ body {
   border-radius: 6px;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
+
+/* ========== Timeline Container Styles ========== */
+.timeline-container {
+  position: relative;
+  width: 100%;
+}
+
+/* New wrapper for positioning buttons correctly */
+.horizontal-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* ========== Timeline Controls ========== */
+.timeline-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none; /* allow clicks through this container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-btn {
+  pointer-events: all; /* re-enable pointer events for button */
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.timeline-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 8px #00000055;
+}
+
+.timeline-btn svg {
+  display: block;
+  pointer-events: none;
+}
+
+/* ========== Horizontal Timeline Styles ========== */
+.horizontal-timeline {
+  display: flex;
+  gap: 2rem;
+  scroll-snap-type: x mandatory;
+  padding: 2rem 0;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  overflow-x: auto;
+}
+
+.horizontal-timeline::-webkit-scrollbar {
+  display: none;
+}
+
+.timeline-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-width: 100%;
+  background: #151515;
+  padding: 2rem;
+  border-radius: 1rem;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  color: #fff;
+  overflow-wrap: break-word;
+  position: relative;
+}
+
+.timeline-card h3,
+.timeline-card p {
+  margin: 0 0 1rem 0;
+}
+
+/* ========== Dot Navigation ========== */
+.dot-nav, .edu-dot-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.dot-nav::before, .edu-dot-nav::before {
+  content: '';
+  position: absolute;
+  top: 60%; /* Center the line vertically with the dots */
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #444;
+  z-index: 0;
+}
+
+.dot-nav .dot-progress-line, .edu-dot-nav .edu-progress-line {
+  content: '';
+  position: absolute;
+  top: 60%; /* Position the active line under the dots */
+  left: 0;
+  width: 0%; /* Initially no progress line filled */
+  height: 4px;
+  background-color: #ffcc32; /* Active line color */
+  transition: width 0.5s ease;
+  z-index: 1; /* Make sure it stays behind the dots */
+}
+
+.dot-label, .edu-dot-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.dot, .edu-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #555;
+  border: 3px solid #555;
+  transition: all 0.3s ease;
+  position: relative; /* To ensure dot is on top of the progress line */
+  z-index: 2;
+}
+
+.dot:hover, .edu-dot:hover,
+.dot:focus, .edu-dot:focus {
+  background-color: #ffcc32;
+}
+
+.dot-title, .edu-dot-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #aaa;
+  text-align: center;
+}
+
+@keyframes dotBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes edu-dotBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.dot-label.active .dot, .edu-dot-label.active .edu-dot {
+  background-color: #ffcc32;
+  border-color: #ffcc32;
+  animation: dotBounce 0.5s ease;
+  box-shadow: 0 0 10px #ffcc32aa;
+}
+
+.dot-nav.active .dot-progress-line, .edu-dot-nav.active .edu-progress-line {
+  width: 100%; /* Fill the line as you progress */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .timeline-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .timeline-btn {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .timeline::after {
-  left: 31px;
+    left: 31px;
   }
-  
+
   /* Full-width containers */
   .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  
+
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
-  left: 60px;
-  border: medium solid #151515;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #151515 transparent transparent;
+    left: 60px;
+    border: medium solid #151515;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #151515 transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-  left: 15px;
+    left: 15px;
   }
-  
+
   /* Make all right containers behave like the left ones */
   .right {
-  left: 0%;
+    left: 0%;
+  }
+
+  .timeline-card {
+    min-width: 100vw; /* For smaller screens, make sure one card fits perfectly */
   }
 }
