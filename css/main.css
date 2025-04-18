@@ -1962,8 +1962,6 @@ label.dd-button {
 
 }
 
-
-
 /* ===================================================================
  * # header styles
  *
@@ -2205,6 +2203,124 @@ label.dd-button {
  * responsive:
  * header
  * ------------------------------------------------------------------- */
+ @media only screen and (max-width: 1000px) {
+  .s-header {
+    top: 0;
+  }
+
+  .s-header > .row {
+    max-width: none;
+    width: auto;
+  }
+
+  .header-logo {
+    left: 40px;
+    top: 3rem;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .header-logo img {
+    width: 120px;
+    height: 34px;
+  }
+
+  .s-header.sticky .header-logo {
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .header-menu-toggle {
+    top: 3rem;
+    right: 40px;
+  }
+
+  .header-nav-wrap {
+    display: none;
+    height: auto;
+    width: 100%;
+    right: auto;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    padding: 120px 40px 21px;
+  }
+
+  .header-nav-wrap .header-nav {
+    display: block;
+    height: auto;
+    margin: 0 0 4.2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .header-nav-wrap .header-nav li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.07);
+  }
+
+  .header-nav-wrap .header-nav li a {
+    padding: 18px 0;
+    line-height: 18px;
+  }
+
+  .s-header.sticky .header-nav-wrap {
+    right: 0;
+  }
+
+  .header-menu-toggle {
+    display: block;
+  }
+
+  .header-nav-wrap .header-nav .dropdown {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .header-nav-wrap .header-nav .dropdown .dd-button {
+    width: 100%;
+    text-align: left;
+    padding: 18px 0;
+    line-height: 18px;
+    font-size: 11px;
+    letter-spacing: .3rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .header-nav-wrap .header-nav .dropdown .dd-menu {
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+  }
+  
+  .header-nav-wrap .header-nav .dropdown .dd-menu li {
+    padding: 10px 0;
+    text-align: left;
+  }
+  /* Align dropdown button text to the left */
+  .header-nav-wrap .dropdown .dd-button {
+    text-align: left !important;
+    justify-content: flex-start !important;
+  }
+
+/* Align dropdown menu items to the left */
+  .header-nav-wrap .dropdown .dd-menu li,
+  .header-nav-wrap .dropdown .dd-menu li a {
+    text-align: left !important;
+    justify-content: flex-start !important;
+  }
+}
+
 @media only screen and (max-width:800px) {
   .s-header {
     top: 0;
@@ -2339,13 +2455,12 @@ label.dd-button {
   .header-menu-toggle::before {
     display: none;
   }
-
 }
 
 /* -------------------------------------------------------------------
  * make sure the menu is visible on larger screens
  * ------------------------------------------------------------------- */
-@media only screen and (min-width:801px) {
+@media only screen and (min-width:1001px) {
   .header-nav-wrap {
     display: block !important;
   }
@@ -2712,12 +2827,13 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:900px) {
+
+@media only screen and (max-width:1000px) {
   .home-social {
     display: none;
   }
-
 }
+
 
 @media only screen and (max-width:800px) {
   .home-content h1 {
