@@ -176,17 +176,17 @@
                 </h1>
             </div>
         </div>
-        <div class="row clients-list block-1-2 block-tab-1-2 block-mob-1-2" data-aos="fade-up">
-            <div class="col-block item-client">
+        <div class="row clients-list" data-aos="fade-up">
+            <div class="item-client">
                 <a href="https://www.udemy.com/certificate/UC-83937422-3293-46e8-b36e-bc769d345ee5/" target = "_blank">
-                    <img src="images/skills/udemy.svg" title="Writing With Flair: How To Become An Exceptional Writer" alt="Writing With Flair: How To Become An Exceptional Writer" height="20%" width="20%" />
+                    <img src="images/skills/udemy.svg" class="skill-icon" title="Writing With Flair: How To Become An Exceptional Writer" alt="Writing With Flair: How To Become An Exceptional Writer" />
                 </a>
                 <span class="subheadPlain" style="color: #ffffff;">Writing With Flair:<br> How To Become An<br> Exceptional Writer</span>
                 <p class="timelineSubText"  style="color: #ffce32">Shani Raja</p>
             </div>
-            <div class="col-block item-client">
+            <div class="item-client">
                 <a href="https://www.udemy.com/certificate/UC-3edd2fcc-0a96-4cba-8363-1c52c88b6738/" target = "_blank">
-                    <img src="images/skills/udemy.svg" title="Writing With Flair: How To Become An Exceptional Writer" alt="Writing With Flair: How To Become An Exceptional Writer" height="20%" width="20%" />
+                    <img src="images/skills/udemy.svg" class="skill-icon" title="Writing With Flair: How To Become An Exceptional Writer" alt="Writing With Flair: How To Become An Exceptional Writer"  />
                 </a>
                 <span class="subheadPlain" style="color: #ffffff;">The Content<br> Writing Course</span>
                 <p class="timelineSubText" style="color: #ffce32">Paul Jenkins</p>
@@ -211,11 +211,41 @@
                 
                 <!--timeline ============================ -->
                 <!--<h1 class="display-1 display-1--light" data-aos="fade-up">Writing Experience</h1>-->
-
-                <div class="timeline" data-aos="fade-up">
-                        <div class="container right">
+            <div class="timeline-container">
+                <div class="dot-nav">
+                    <div class="dot-nav-line">
+                        <div class="dot-progress-line"></div>
+                    </div>
+                    <a href="#ex1" class="dot-label">
+                        <span class="dot-title">May '24 - Present</span>
+                        <span class="dot"></span>
+                    </a>
+                    <a href="#ex2" class="dot-label">
+                        <span class="dot-title">Jan. '15 - Jan. '16</span>
+                        <span class="dot"></span>
+                    </a>
+                    <a href="#ex3" class="dot-label">
+                        <span class="dot-title">Jan. '14 - Jan. '15</span>
+                        <span class="dot"></span>
+                    </a>
+                </div>
+                <div class="horizontal-wrapper">
+                    <div class="timeline-controls">
+                        <button class="timeline-btn prev" aria-label="Previous">
+                            <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="timeline-btn next" aria-label="Next">
+                            <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="horizontal-timeline"  id="timelineScrollArea" data-aos="fade-up">
+                        <div id="ex1" class="timeline-card">
                             <div class="content">
-                                <h3 class="subheadPlain">Medium </h3>
+                                <h3 class="subheadPlain">Medium</h3>
                                     <p class="timelineText">
                                     May 2022 - Present <br>
                                     ➡ Writer
@@ -227,7 +257,7 @@
                                     </p>
                             </div>
                         </div>
-                        <div class="container left">
+                        <div id="ex2" class="timeline-card">
                             <div class="content">
                                 <h3 class="subheadPlain">The Phoenix</h3>
                                     <p class="timelineText">
@@ -240,7 +270,7 @@
                                     </p>
                             </div>
                         </div>
-                    <div class="container right">
+                    <div id="ex3" class="timeline-card">
                         <div class="content">
                             <h3 class="subheadPlain">The Manresan</h3>
                                 <p class="timelineText">
@@ -253,8 +283,10 @@
                                 </p>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <!-- end of timeline ======================== -->
+            </div>
             </div>
         </div>
     </section> <!-- end exeprience -->

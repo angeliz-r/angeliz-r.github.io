@@ -1112,10 +1112,15 @@ label.dd-button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   text-align: center; /* center text inside dropdown */
   align-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.dd-input:checked + .dd-button + .dd-menu {
+.header-nav .dropdown .dd-input:checked + .dd-button + .dd-menu  {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 .dd-menu li {  
   text-align: left;
@@ -2322,6 +2327,23 @@ label.dd-button {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  /* Make dropdown items match main nav style */
+.header-nav-wrap .header-nav .dropdown .dd-menu li a {
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  border: none; /* remove any border-bottom or separator if unwanted */
+}
+.header-nav-wrap .header-nav .dropdown .dd-menu li {
+  margin: 0;
+  padding: 0;
+}
+.header-nav-wrap .header-nav .dropdown .dd-menu li:not(:last-child) {
+  border-bottom: 1px solid rgba(255,255,255,0.05); /* optional */
+}
+}
+
 @media only screen and (max-width:800px) {
   .s-header {
     top: 0;
@@ -2459,7 +2481,7 @@ label.dd-button {
 }
 
 /* -------------------------------------------------------------------
- * make sure the menu is visible on larger screens
+ * make sure the menu is visible on larger screens & smaller
  * ------------------------------------------------------------------- */
 @media only screen and (min-width:1001px) {
   .header-nav-wrap {

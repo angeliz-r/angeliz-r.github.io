@@ -302,6 +302,7 @@ html {
 
 .dot-nav.active .dot-progress-line, .edu-dot-nav.active .edu-progress-line {
   width: 100%; /* Fill the line as you progress */
+  transition: width 0.3s ease;
 }
 
 /* Media queries */
