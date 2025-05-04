@@ -1157,6 +1157,23 @@ label.dd-button {
  * # additional components
  *
  * ------------------------------------------------------------------- */
+ /* Container for the back-to-top button (make it full-width and flex-centered) */
+.back-to-top {
+  display: flex;
+  justify-content: center;  /* center horizontally in container:contentReference[oaicite:3]{index=3} */
+  width: 100%;              /* span full page width (block elements are full-width by default:contentReference[oaicite:4]{index=4}) */
+  margin: 2rem 0;           /* vertical spacing (optional) */
+}
+
+/* Ensure the button itself is not using absolute positioning */
+.back-to-top .btn-animated-up {
+  position: relative;
+}
+
+/* (Optional) If vertical centering is needed within the container’s height: */
+.back-to-top {
+  align-items: center; /* center vertically in container if container has fixed height:contentReference[oaicite:5]{index=5} */
+}
 
 /* ------------------------------------------------------------------- 
  * ## alert box
